@@ -91,7 +91,7 @@ body {
 
 .card img {
   display: block;
-  max-width: 80%;
+  max-height: 200px;
   margin: 0 auto;
 }
 
