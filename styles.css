@@ -76,15 +76,8 @@ body {
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 20px 0;
   text-align: center;
-
-  margin: auto;
-  height: 100px;
-  color: var(--primary-color);
-  font-family: var(--primary-font);
   font-size: 2rem;
 }
 
@@ -125,9 +118,10 @@ button {
   cursor: pointer;
 }
 
-button:active {
-  transform: translateY(4px);
-  outline: 2px solid white;
+button:active,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
 
 .footer-button {
@@ -160,8 +154,8 @@ button:active {
   }
 }
 
-/* Стили для устройств с минимальной шириной 360px и максимальной шириной 768px */
-@media (min-width: 600px) and (max-width: 768px) {
+/* Стили для устройств с минимальной шириной 600px и максимальной шириной 767px */
+@media (min-width: 600px) and (max-width: 767px) {
   .container-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,7 +170,7 @@ button:active {
 }
 
 /* Стили для устройств с шириной до 600px */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .container-cards {
     display: grid;
     grid-template-columns: 1fr;
