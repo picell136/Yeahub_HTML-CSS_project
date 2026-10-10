@@ -35,7 +35,7 @@ body {
   flex-shrink: 0;
 }
 
-.header .container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ body {
   align-items: center;
 }
 
-.main .container {
+.main__container {
   display: flex;
   flex-direction: column;
   width: var(--container-max-width);
@@ -69,7 +69,7 @@ body {
   padding: 15px 0;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   flex-direction: row;
   width: var(--container-max-width);
